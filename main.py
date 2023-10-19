@@ -57,3 +57,23 @@ if file_to_predict is not None:
         st.write("Erreur de chargement de l'image.")
 else:
     st.write("Veuillez télécharger une image.")
+
+# Ajouter l'image de fond
+
+# Modifier le chemin de l'image
+background_image_path = './image/img.jpg'
+
+# Ajouter l'image de fond
+st.markdown(
+    """
+    <style>
+    html {
+        background-image: url(./image/img.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
