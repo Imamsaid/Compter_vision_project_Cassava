@@ -1,10 +1,10 @@
 import streamlit as st
 import cv2
 import numpy as np
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 
 # Charger le modèle
-model = load_model('./modelcassava_model.h5')
+model = load_model('./model/cassava.h5')
 
 class_names = {
     0: "Cassava Bacterial Blight (CBB)",
